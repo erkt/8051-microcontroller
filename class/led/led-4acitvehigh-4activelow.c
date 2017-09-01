@@ -1,0 +1,10 @@
+#include<reg51.h>
+#include"delay.h"
+main(){
+	while(1){
+		P2=0x0F;
+		my_delay(1000);
+		P2=0xf0;
+		my_delay(1000);
+	}
+}
